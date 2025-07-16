@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Rafaelen</title>
+  <link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Condiment&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header class="header">
+        <h1>🎨 Arte a Mão 🖌️</h1>
+    <p>por Rafaelen</p>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="trabalhos.html">Trabalhos</a></li>
+        <li><a href="recentes.html">Galeria</a></li>
+        <li><a href="avaliacoes.html">Avaliações</a></li>
+        <li><a href="formulario.html" class="ativo">Contato</a></li>
+      </ul>
+      <div class="mobile-toggle" id="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <div class="contact-container">
+    <div class="contact-card">
+      
+      <div class="form-column">
+        <h1 class="form-title">Dando vida as suas ideias!<br>entre em contato.</h1>
+        
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">ENVIAR</button>
+        </form>
+      </div>
+
+      <div class="image-column">
+        <img src="img/ink.jpg" alt="Foto da artista Rafaelen">
+        <a href="index.html" class="close-btn" aria-label="Fechar">&times;</a>
+      </div>
+
+    </div>
+  </div>
+
+    <section class="section behance">
+    <div class="behance-header">
+      <h2 class="titulo-secao">Meu Portfólio no Behance</h2>
+      <hr class="divider">
+    </div>
+    
+    <div class="behance-iframe-container">
+      <iframe src="https://www.behance.net/embed/project/198217831?ilo=1" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Arte a Mão por Rafaelen</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

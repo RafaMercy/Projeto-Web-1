@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhos - Rafaelen</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Condiment&display=swap" rel="stylesheet">
+  
+  <style>
+
+  </style> 
+</head>
+<body>
+
+  <header class="header">
+        <h1>🎨 Arte a Mão 🖌️</h1>
+    <p>por Rafaelen</p>
+    <nav class="navbar">
+      <ul id="nav-list">
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="trabalhos.html">Trabalhos</a></li>
+        <li><a href="recentes.html">Galeria</a></li>
+        <li><a href="avaliacoes.html">Avaliações</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+      </ul>
+      <div class="mobile-toggle" id="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section categorias">
+      <h2 class="titulo-secao">Trabalhos</h2>
+      <div class="categoria-grid">
+        <!-- Arte Digital -->
+        <a href="galeria_digital.html" class="categoria" aria-label="Galeria de Artes Digitais">
+          <div class="imagem-com-moldura">
+            <img class="arte" src="img/digitalart.jpg" alt="Exemplo de arte digital" loading="lazy">
+            <img class="moldura" src="img/frame.png" alt="" aria-hidden="true">
+          </div>
+          <p>Artes Digitais</p>
+        </a>
+
+        <!-- Tatuagens -->
+        <a href="galeria_tatuagens.html" class="categoria" aria-label="Galeria de Tatuagens">
+          <div class="imagem-com-moldura">
+            <img class="arte" src="img/tatoo.jpg" alt="Exemplo de tatuagem" loading="lazy">
+            <img class="moldura" src="img/frame.png" alt="" aria-hidden="true">
+          </div>
+          <p>Tatuagens</p>
+        </a>
+
+        <!-- Desenhos -->
+        <a href="galeria_desenhos.html" class="categoria" aria-label="Galeria de Desenhos">
+          <div class="imagem-com-moldura">
+            <img class="arte" src="img/pinturas.jpg" alt="Exemplo de desenho" loading="lazy">
+            <img class="moldura" src="img/frame.png" alt="" aria-hidden="true">
+          </div>
+          <p>Desenhos e Pinturas</p>
+        </a>
+
+        <!-- Logos -->
+        <a href="galeria_logos.html" class="categoria" aria-label="Galeria de Logos">
+          <div class="imagem-com-moldura">
+            <img class="arte" src="img/logos.jpg" alt="Exemplo de logo" loading="lazy">
+            <img class="moldura" src="img/frame.png" alt="" aria-hidden="true">
+          </div>
+          <p>Artes promocionais e Logos</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Arte a Mão por Rafaelen</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('nav-list').classList.toggle('show');
+    });
+
+    document.querySelectorAll('.imagem-com-moldura').forEach(container => {
+      container.addEventListener('click', function() {
+        const imgSrc = this.querySelector('.arte').src;
+        window.location.href = this.parentElement.href;
+      });
+    });
+  </script>
+</body>
+</html>
